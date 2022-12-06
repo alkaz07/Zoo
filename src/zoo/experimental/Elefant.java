@@ -12,15 +12,14 @@ public class Elefant {
             this.age = age;
     }
 
-    void askhisWeightAge(weight, age) {
+    void askhisWeightAge() {
         System.out.println("введите вес и возраст слона " + this);
         Scanner scan = new Scanner(System.in);
         this.weight = scan.nextInt();
         this.age = scan.nextInt();
     }
     void eatGrass(int weight1) {
-        weight1 = 3;
 
-        this.weight = this.weight + weight1;
+        weight = weight + weight1;
     }
 }
