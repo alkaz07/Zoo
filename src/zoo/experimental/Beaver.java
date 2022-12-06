@@ -1,7 +1,7 @@
 package zoo.experimental;
 
-public class Beaver {
-    String name;
+public class Beaver extends Mammal{
+ //   String name;
     String breed;
     static final String [] allColors = { "черный", "желтый" , "коричневый", "белый", "полосатый" }; //общий для всех бобров и не изменный
     String color;

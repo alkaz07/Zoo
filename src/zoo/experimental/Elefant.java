@@ -2,9 +2,9 @@ package zoo.experimental;
 
 import java.util.Scanner;
 
-public class Elefant {
-    private int weight;
-    public int age;
+public class Elefant extends Mammal{
+    //private int weight;
+    //public int age;
     public Elefant(int weight, int a) {
         this.weight = weight;
         if(a<0)
@@ -14,7 +14,7 @@ public class Elefant {
     }
 
     public int getWeight() {
-        return weight;
+        return (int) weight;
     }
 
     public void becomeOlder()

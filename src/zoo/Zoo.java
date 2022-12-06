@@ -1,8 +1,5 @@
 package zoo;
-import zoo.experimental.Bear;
-import zoo.experimental.Beaver;
-import zoo.experimental.Dog;
-import zoo.experimental.Elefant;
+import zoo.experimental.*;
 
 import java.util.Scanner;
 
@@ -37,6 +34,41 @@ public class Zoo {
         System.out.println("1 слон сейчас весит "+e1.getWeight());
         e1.age = 99;
         e2.becomeOlder();
+
+        Object[] massiv = new Object[4];
+        massiv[0] = e1;
+        massiv[1] = e2;
+        massiv[2] = b2;
+        massiv[3] = b1;
+        for (Object ob: massiv  ) {
+            if(ob instanceof Beaver){
+                Beaver beaver = (Beaver) ob;
+                beaver.buildPlotina();
+            }
+            if (ob instanceof Elefant){
+                ((Elefant) ob).eatGrass(10);
+                System.out.println("слон весит "+((Elefant) ob).getWeight());
+            }
+
+
+        }
+        Mammal[] group = new Mammal[massiv.length];
+        /*for (int i = 0; i < massiv.length ; i++) {
+            group[i] = (Mammal) massiv[i];
+        }*/
+        group[0] = b1;
+        group[1] = e2;
+        group[2] = b2;
+        group[3] = new Monkey("орангутан", "male", "Эдик");
+        for (Mammal beast : group){
+            System.out.println(beast.name);
+            if(beast instanceof Beaver)
+                ((Beaver) beast).say();
+            if(beast instanceof Monkey)
+                ((Monkey) beast).wave();
+
+        }
+
     }
 
 }

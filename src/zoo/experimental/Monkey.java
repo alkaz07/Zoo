@@ -1,6 +1,6 @@
 package zoo.experimental;
 
-public class Monkey {
+public class Monkey extends Mammal {
     String species;
     String gender;
     String name;
@@ -20,7 +20,7 @@ public class Monkey {
         this.name = name;
     }
 
-    void wave() {
+    public void wave() {
         System.out.println(nameOfMonkey() + " машет вам рукой");
     }
 
