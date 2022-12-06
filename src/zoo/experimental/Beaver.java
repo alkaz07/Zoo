@@ -17,12 +17,12 @@ public class Beaver {
         System.out.println(name + "маши хвостом");
     }
 
-    public void getVoice() {
+    public void getVoice() { //
         System.out.println(name);
         say();
     }
 
-    private void say() {
+    public void say() {
         System.out.println("Где мое бревно?");
     }
     public void buildPlotina  ()
