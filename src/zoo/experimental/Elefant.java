@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class Elefant {
     private int weight, age;
-    public Elefant(int weight, int age) {
+    public Elefant(int weight, int a) {
         this.weight = weight;
-        if(age<0)
+        if(a<0)
             this.age = 0;
         else
-            this.age = age;
+            age = a;
     }
 
     void askhisWeightAge() {

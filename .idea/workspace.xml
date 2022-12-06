@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55c351da-043d-4959-b561-e3836dcf272d" name="Changes" comment="+ Dog&#10;+ package zoo.experimental">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="55c351da-043d-4959-b561-e3836dcf272d" name="Changes" comment="+ service files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zoo/Monkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/Monkey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zoo/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/Zoo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zoo/experimental/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zoo/experimental/Elefant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/Elefant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670344089407</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="+ service files">
+      <created>1670344688702</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670344688702</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +142,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="+ Dog&#10;+ package zoo.experimental" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ Dog&#10;+ package zoo.experimental" />
+    <MESSAGE value="+ service files" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ service files" />
   </component>
 </project>
