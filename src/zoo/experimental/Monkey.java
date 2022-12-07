@@ -24,7 +24,7 @@ public class Monkey extends Mammal {
         System.out.println(nameOfMonkey() + " машет вам рукой");
     }
 
-    void feed(String whatToGive) {
+    public void feed(String whatToGive) {
         if (whatToGive.equals("Банан")||whatToGive.equals("банан")||whatToGive.equals("banana")) {
             System.out.println(nameOfMonkey()+" съедает "+ whatToGive+ " и просит еще");
         }
