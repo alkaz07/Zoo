@@ -22,4 +22,23 @@ public class Bird {
     public boolean isFlyable() {
         return flyable;
     }
+
+    public Bird(String species, String name, int age, double weight, boolean flyable) {
+        System.out.println("запущен конструктор Bird с параметрами");
+        this.species = species;
+        this.name = name;
+        if (age<0)
+            this.age =0;
+        else
+            this.age = age;
+        if(weight <0)
+            this.weight=0;
+        else
+            this.weight = weight;
+        this.flyable = flyable;
+    }
+
+    public Bird() {
+        System.out.println("запущен конструктор Bird без параметров");
+    }
 }
