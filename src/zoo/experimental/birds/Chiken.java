@@ -1,6 +1,6 @@
 package zoo.experimental.birds;
 
-public class Chiken extends Bird {
+public class Chiken extends Bird { //наследует клас родителя
     static final String[] allColors = {"желтая", "красная", "черная", "коричневая"};
     String color;
     static final String[] allBreeds = {"несушка", "декоративная", "мясная", "бойцовская"};
@@ -9,6 +9,7 @@ public class Chiken extends Bird {
     //int age;
 
     public Chiken(String color, String breed, String name, int age) {
+        System.out.println("запущен конструктор Chiken с параметрами");
         this.breed = breed;
         this.color = color;
         this.age = age;
