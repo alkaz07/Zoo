@@ -1,4 +1,4 @@
-package zoo.experimental;
+package zoo.experimental.birds;
 
 public class Bird {
     public String species;

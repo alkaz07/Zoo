@@ -1,4 +1,4 @@
-package zoo.experimental;
+package zoo.experimental.mammals;
 
 import java.util.Scanner;
 

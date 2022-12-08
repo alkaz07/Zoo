@@ -1,13 +1,15 @@
 package zoo;
-import zoo.experimental.*;
-
+import zoo.experimental.mammals.*;
+import zoo.experimental.birds.*;
 import java.util.Scanner;
 
 public class Zoo {
 
     public static void main(String[] args) {
-        example2();
+        example3();
     }
+
+
 
     static void example1(){
         Scanner sc = new Scanner(System.in);
@@ -70,7 +72,17 @@ public class Zoo {
         }
 
     }
+    static void example3() {
+        Bird bird1 = new Bird();
+        Bird bird2 = new Ostrich("Паша", 11, 60);
+        bird1.setFlyable(true);
+        bird2.setFlyable(true);
 
+        ((Ostrich) bird2).fatality();
+        Woodpecker bird3 = new Woodpecker("Вуди", 5, 0.7);
+     //   ((Ostrich) bird1).fatality();  // ClassCastException
+
+    }
 }
 
 

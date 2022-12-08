@@ -1,13 +1,13 @@
-package zoo.experimental;
+package zoo.experimental.birds;
 
 public class Woodpecker extends Bird {
     public double lucky = 0.05;
     public Woodpecker() {
-        this.species = "Дятел";
+        this.species = "Р”СЏС‚РµР»";
         this.flyable = true;
     }
     public Woodpecker(String name, int age, double weight) {
-        this.species = "Дятел";
+        this.species = "Р”СЏС‚РµР»";
         this.flyable = true;
         this.name = name;
         this.age = age;
@@ -18,19 +18,21 @@ public class Woodpecker extends Bird {
         try {
             while (true) {
                 if (Math.random() < 1 - lucky) {
-                    System.out.println("Дятел продолжает стучать!");
+                    System.out.println("Р”СЏС‚РµР» РїСЂРѕРґРѕР»Р¶Р°РµС‚ СЃС‚СѓС‡Р°С‚СЊ!");
                 } else {
-                    System.out.println("Дятел находит червяка и перелетает на другое дерево");
+                    System.out.println("Р”СЏС‚РµР» РЅР°С…РѕРґРёС‚ С‡РµСЂРІСЏРєР° Рё РїРµСЂРµР»РµС‚Р°РµС‚ РЅР° РґСЂСѓРіРѕРµ РґРµСЂРµРІРѕ");
                     break;
                 }
                 Thread.sleep(444);
             }
         }
         catch (Exception e) {
-            System.out.println("Дятел достучался");
+            System.out.println("Р”СЏС‚РµР» РґРѕСЃС‚СѓС‡Р°Р»СЃСЏ");
         }
     }
-//    Для теста:
-//    Woodpecker woody = new Woodpecker("Woody",32,1.8);
-//    woody.knocks();
+//    Р”Р»СЏ С‚РµСЃС‚Р°:
+//    public static void main (String[] args) {
+//        Woodpecker woody = new Woodpecker("Woody",32,1.8);
+//        woody.knocks();
+//    }
 }
