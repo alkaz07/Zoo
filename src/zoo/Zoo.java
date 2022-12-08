@@ -78,9 +78,13 @@ public class Zoo {
         bird1.setFlyable(true);
         bird2.setFlyable(true);
 
+
         ((Ostrich) bird2).fatality();
         Woodpecker bird3 = new Woodpecker("Вуди", 5, 0.7);
      //   ((Ostrich) bird1).fatality();  // ClassCastException
+        System.out.println(bird1.name);
+        System.out.println(bird2.name);
+        System.out.println(bird3.name);
 
     }
 }

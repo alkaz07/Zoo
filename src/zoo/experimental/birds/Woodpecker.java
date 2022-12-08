@@ -2,16 +2,20 @@ package zoo.experimental.birds;
 
 public class Woodpecker extends Bird {
     public double lucky = 0.05;
+
     public Woodpecker() {
+        System.out.println("запущен конструктор Woodpecker без параметров");
         this.species = "Дятел";
         this.flyable = true;
     }
     public Woodpecker(String name, int age, double weight) {
-        this.species = "Дятел";
+        super("Дятел", name, age, weight,true);
+        System.out.println("запущен конструктор Woodpecker с параметрами");
+/*        this.species = "Дятел";
         this.flyable = true;
         this.name = name;
         this.age = age;
-        this.weight = weight;
+        this.weight = weight;*/
     }
 
     public void knocks() {
