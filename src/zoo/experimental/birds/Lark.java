@@ -4,14 +4,16 @@ public class Lark extends Bird{
   String  Sing;
 
 
- public Lark (String Name,String Fly,String Sing,int Age){
-     this.name=Name;
+ public Lark (String name,String Fly,String Sing,int age,double weight){
+     super("Жаворонок",name, age, weight, false);
+     /*this.weight = weight;
+     this.name=name;
      //преобразовать String в boolean
      this.Sing=Sing;
-     if (Age<0)
+     if (age<0)
          this.age=0;
      else
-         this.age=Age;
+         this.age=age;*/
 
  }
  public void Fly (){
