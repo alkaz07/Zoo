@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55c351da-043d-4959-b561-e3836dcf272d" name="Changes" comment="+package mammals&#10;+package birds&#10;+ different birds&#10;+ example3()">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="55c351da-043d-4959-b561-e3836dcf272d" name="Changes" comment="+ constructor for Bird">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zoo/experimental/birds/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/birds/Bird.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zoo/experimental/birds/Ostrich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/birds/Ostrich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zoo/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/Zoo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/zoo/experimental/birds/Woodpecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/birds/Woodpecker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670516869507</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="+ constructor for Bird">
+      <created>1670518772336</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670518772336</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +176,7 @@
     <MESSAGE value="+ service files" />
     <MESSAGE value="moved Monkey" />
     <MESSAGE value="+package mammals&#10;+package birds&#10;+ different birds&#10;+ example3()" />
-    <option name="LAST_COMMIT_MESSAGE" value="+package mammals&#10;+package birds&#10;+ different birds&#10;+ example3()" />
+    <MESSAGE value="+ constructor for Bird" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ constructor for Bird" />
   </component>
 </project>
