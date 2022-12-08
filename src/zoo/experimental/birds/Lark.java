@@ -24,4 +24,8 @@ public class Lark extends Bird{
 
  }
 
+    @Override
+    public void move() {
+
+    }
 }

@@ -15,6 +15,12 @@ public class Ostrich extends Bird {
         else
             this.age = age;*/
     }
+
+    @Override
+    public void move() {
+        run();
+    }
+
     public void fatality() {
         System.out.println("—траус нокаутировал смотрител€ зоопарка");
     }

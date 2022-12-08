@@ -1,6 +1,9 @@
 package zoo;
 import zoo.experimental.mammals.*;
 import zoo.experimental.birds.*;
+
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Zoo {
@@ -73,21 +76,26 @@ public class Zoo {
 
     }
     static void example3() {
-        Bird bird1 = new Bird();
+       // Bird bird1 = new Bird(); //нельзя вызывать, если Bird абстрактный класс
         Bird bird2 = new Ostrich("Паша", 11, 60);
-        bird1.setFlyable(true);
+      //  bird1.setFlyable(true);
         bird2.setFlyable(true);
 
 
         ((Ostrich) bird2).fatality();
         Woodpecker bird3 = new Woodpecker("Вуди", 5, 0.7);
      //   ((Ostrich) bird1).fatality();  // ClassCastException
-        System.out.println(bird1.name);
+      //  System.out.println(bird1.name);
         System.out.println(bird2.name);
         System.out.println(bird3.name);
         bird3.setLucky(-32);
         Woodpecker bird4 = new Woodpecker("Голди",6, 0.8, 0.36);
         bird4.knocks();
+        Bird bird5 = new Chiken("черный","несушка","Петя",2);
+
+        List<Bird> birds = new LinkedList<>();
+        birds.add(bird2);
+
     }
 }
 

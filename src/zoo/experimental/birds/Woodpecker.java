@@ -20,6 +20,11 @@ public class Woodpecker extends Bird {
         this.weight = weight;*/
     }
 
+    @Override
+    public void move() {
+
+    }
+
     public Woodpecker( String name, int age, double weight,  double lucky) {
         super("ƒ€тел", name, age, weight, true);
         System.out.println("запущен конструктор Woodpecker с параметрами и удачей");
