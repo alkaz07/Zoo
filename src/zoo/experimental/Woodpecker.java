@@ -1,6 +1,7 @@
 package zoo.experimental;
 
 public class Woodpecker extends Bird {
+    public double lucky = 0.05;
     public Woodpecker() {
         this.species = "ƒ€тел";
         this.flyable = true;
@@ -13,14 +14,18 @@ public class Woodpecker extends Bird {
         this.weight = weight;
     }
 
-    public void knocks() {
+    public void knocks() throws InterruptedException {
         while (true) {
-            if (Math.random() < 0.95) {
+            if (Math.random() < 1-lucky) {
                 System.out.println("ƒ€тел продолжает стучать!");
             } else {
                 System.out.println("ƒ€тел находит черв€ка и перелетает на другое дерево");
                 break;
             }
+            Thread.sleep(444);
         }
     }
+//    ƒл€ теста:
+//    Woodpecker woody = new Woodpecker("Woody",32,1.8);
+//    woody.knocks();
 }
