@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55c351da-043d-4959-b561-e3836dcf272d" name="Changes" comment="+package mammals&#10;+package birds&#10;+ different birds&#10;+ example3()">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zoo/experimental/birds/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/birds/Bird.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zoo/experimental/birds/Ostrich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/birds/Ostrich.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zoo/experimental/birds/Woodpecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/birds/Woodpecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zoo/experimental/birds/Flamingo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
