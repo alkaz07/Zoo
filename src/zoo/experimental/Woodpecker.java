@@ -14,15 +14,20 @@ public class Woodpecker extends Bird {
         this.weight = weight;
     }
 
-    public void knocks() throws InterruptedException {
-        while (true) {
-            if (Math.random() < 1-lucky) {
-                System.out.println("ƒ€тел продолжает стучать!");
-            } else {
-                System.out.println("ƒ€тел находит черв€ка и перелетает на другое дерево");
-                break;
+    public void knocks() {
+        try {
+            while (true) {
+                if (Math.random() < 1 - lucky) {
+                    System.out.println("ƒ€тел продолжает стучать!");
+                } else {
+                    System.out.println("ƒ€тел находит черв€ка и перелетает на другое дерево");
+                    break;
+                }
+                Thread.sleep(444);
             }
-            Thread.sleep(444);
+        }
+        catch (Exception e) {
+            System.out.println("ƒ€тел достучалс€");
         }
     }
 //    ƒл€ теста:
