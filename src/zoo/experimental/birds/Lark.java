@@ -23,5 +23,8 @@ public class Lark extends Bird{
      System.out.println("Чрик-чрик-чрик");
 
  }
+ public void move(){
+     System.out.println("Передвигается прыжками ");
+ }
 
 }
