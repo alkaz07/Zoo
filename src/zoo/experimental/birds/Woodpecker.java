@@ -1,7 +1,7 @@
 package zoo.experimental.birds;
 
 public class Woodpecker extends Bird {
-    private double lucky = 0.05;
+    private double luck = 0.05;
     static final double MIN_LUCK = 0.001;
     static final double MAX_LUCK = 0.999;
 
@@ -10,6 +10,8 @@ public class Woodpecker extends Bird {
         this.species = "ƒ€тел";
         this.flyable = true;
     }
+
+
     public Woodpecker(String name, int age, double weight) {
         super("ƒ€тел", name, age, weight,true);
         System.out.println("запущен конструктор Woodpecker с параметрами");
@@ -20,21 +22,26 @@ public class Woodpecker extends Bird {
         this.weight = weight;*/
     }
 
+    public Woodpecker( String name, int age, double weight,  double luck) {
+        super("ƒ€тел", name, age, weight, true);
+        System.out.println("запущен конструктор Woodpecker с параметрами и удачей");
+        setLuck(luck);
+    }
+
     @Override
     public void move() {
 
     }
 
-    public Woodpecker( String name, int age, double weight,  double lucky) {
-        super("ƒ€тел", name, age, weight, true);
-        System.out.println("запущен конструктор Woodpecker с параметрами и удачей");
-        setLucky(lucky);
+    @Override
+    public void fromString(String str) {
+
     }
 
     public void knocks() {
         try {
             while (true) {
-                if (Math.random() < 1 - lucky) {
+                if (Math.random() < 1 - luck) {
                     System.out.println("ƒ€тел продолжает стучать!");
                 } else {
                     System.out.println("ƒ€тел находит черв€ка и перелетает на другое дерево");
@@ -48,12 +55,12 @@ public class Woodpecker extends Bird {
         }
     }
 
-    public void setLucky(double luck) {
+    public void setLuck(double luck) {
         if (luck < MIN_LUCK)
             luck = MIN_LUCK;
         if (luck >MAX_LUCK)
             luck = MAX_LUCK;
-        this.lucky = luck;
+        this.luck = luck;
     }
 
     //    ƒл€ теста:
