@@ -1,6 +1,6 @@
 package zoo.experimental.birds;
 
-public class Lark extends Bird{
+ abstract public class Lark extends Bird{
   String  Sing;
 
 
@@ -25,7 +25,18 @@ public class Lark extends Bird{
  }
 
     @Override
-    public void move() {
+    public  void move() {
 
+            if(age<0)
+                this.age=0;
+            else
+                this.age = age;
+
+    }
+    public void setWeight(double weight) {
+        if(weight<0)
+            this.weight =0;
+        else
+            this.weight = weight;
     }
 }

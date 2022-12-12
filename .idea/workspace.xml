@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55c351da-043d-4959-b561-e3836dcf272d" name="Changes" comment="+ constructors for Woodpecker">
-      <change afterPath="$PROJECT_DIR$/src/zoo/experimental/Animal.java" afterDir="false" />
+    <list default="true" id="55c351da-043d-4959-b561-e3836dcf272d" name="Changes" comment="moved Monkey">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zoo/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/Zoo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zoo/experimental/birds/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/birds/Bird.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zoo/experimental/birds/Chiken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/birds/Chiken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zoo/experimental/birds/Flamingo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/birds/Flamingo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zoo/experimental/birds/Kiwi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/birds/Kiwi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/zoo/experimental/birds/Lark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/birds/Lark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zoo/experimental/birds/Ostrich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/birds/Ostrich.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zoo/experimental/birds/Woodpecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/birds/Woodpecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zoo/experimental/mammals/Mammal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/mammals/Mammal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zoo/experimental/mammals/Monkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/mammals/Monkey.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,10 +85,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="zoo.Zoo" />
