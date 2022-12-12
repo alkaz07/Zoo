@@ -41,7 +41,7 @@ abstract public class Lark extends Bird{
         else
             this.weight = weight;
     }
-    public void Lark
+    public void _Lark()
         {
         ArrayList<String> Lark = new ArrayList<String>();
         Lark.add("name");

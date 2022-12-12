@@ -2,6 +2,9 @@ package zoo;
 import zoo.experimental.mammals.*;
 import zoo.experimental.birds.*;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
@@ -9,7 +12,7 @@ import java.util.Scanner;
 public class Zoo {
 
     public static void main(String[] args) {
-        example3();
+        example5();
     }
 
 
@@ -88,7 +91,7 @@ public class Zoo {
       //  System.out.println(bird1.name);
         System.out.println(bird2.name);
         System.out.println(bird3.name);
-        bird3.setLucky(-32);
+        bird3.setLuck(-32);
         Woodpecker bird4 = new Woodpecker("Голди",6, 0.8, 0.36);
         bird4.knocks();
         Bird bird5 = new Chiken("черный","несушка","Петя",2);
@@ -96,6 +99,39 @@ public class Zoo {
         List<Bird> birds = new LinkedList<>();
         birds.add(bird2);
 
+    }
+
+    static void example4(){
+        Flamingo fl = new Flamingo("Red", 10, 7.7);
+        fl.fromString("Green;5;10.2");
+
+        fl.move();
+        System.out.println(fl.name);
+
+        Woodpecker w = new Woodpecker();
+        w.fromString("Woody2; 4; 2.5; 0.4");
+        System.out.println(w.name);
+        w.knocks();
+        System.out.println(w.getLuck());
+    }
+    static void example5(){
+        String fname = "C:\\Users\\Teacher\\YandexDisk\\prog_2023\\java1\\13\\Zoo\\src\\kiwies.csv";
+        try {
+            ArrayList<Kiwi> kiwies = new ArrayList<>();
+            Scanner fscan = new Scanner(new File(fname));
+            while (fscan.hasNext()) {
+                String line = fscan.nextLine();
+                Kiwi currentKiwi = new Kiwi();
+                currentKiwi.fromString(line);
+                kiwies.add(currentKiwi);
+            }
+
+            for (Kiwi k: kiwies ) {
+                System.out.println(k.name + " "+k.age);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 }
 

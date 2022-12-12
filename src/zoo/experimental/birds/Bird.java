@@ -2,6 +2,8 @@ package zoo.experimental.birds;
 
 import zoo.experimental.Animal;
 
+import java.util.Scanner;
+
 public abstract class Bird extends Animal {
     public String species;
     boolean flyable;
@@ -33,13 +35,12 @@ public abstract class Bird extends Animal {
         System.out.println("запущен конструктор Bird без параметров");
     }
 
-    public abstract void fromString(String str);    //TODO: всем птичкам нужно реализовать
-                                                    //"распаковку" из строки параметров,
-                                                    //разделенных ;
-    //        str.replace(';', ' ');
-    //        Scanner scanner = new Scanner(str);
-    //        name = scanner.next();
-    //        age = scanner.nextInt();
-    //        weight = scanner.nextDouble();
-
+    public  void fromString(String str)
+    {
+        str = str.replace(';', ' ').replace('.', ',');
+        Scanner scanner = new Scanner(str);
+        name = scanner.next();
+        setAge( scanner.nextInt());
+        setWeight( scanner.nextDouble());
+    }
 }

@@ -34,7 +34,9 @@ public class Chiken extends Bird { //наследует клас родител�
 
     @Override
     public void move() {
-
+        //TODO: make movement
     }
+
+
 }
 

@@ -34,10 +34,11 @@ public class Woodpecker extends Bird {
 
     @Override
     public void fromString(String str) {
-        Scanner scanner = new Scanner(str.replace(';',' '));
-        name = scanner.next();
-        age = scanner.nextInt();
-        weight = scanner.nextDouble();
+        Scanner scanner = new Scanner(str.replace(';',' ').replace('.', ','));
+        super.fromString(str);
+        scanner.next(); scanner.next(); scanner.next();
+        if(scanner.hasNextDouble())
+           setLuck(scanner.nextDouble());
     }
 
     public void knocks() {
@@ -65,7 +66,11 @@ public class Woodpecker extends Bird {
         this.luck = luck;
     }
 
-//    public static void main(String[] args) {
+    public double getLuck() {
+        return luck;
+    }
+
+    //    public static void main(String[] args) {
 //        String str = "Äÿעוכ; 5; 0,9";
 //        Woodpecker wp1 = new Woodpecker();
 //        wp1.fromString(str);
