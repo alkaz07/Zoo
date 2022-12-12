@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Zoo {
 
     public static void main(String[] args) {
-        example5();
+        example6();
     }
 
 
@@ -115,7 +115,7 @@ public class Zoo {
         System.out.println(w.getLuck());
     }
     static void example5(){
-        String fname = "C:\\Users\\Teacher\\YandexDisk\\prog_2023\\java1\\13\\Zoo\\src\\kiwies.csv";
+        String fname = "C:\\Users\\Teacher\\YandexDisk\\prog_2023\\java1\\13\\Zoo\\src\\files with birds\\kiwies.csv";
         try {
             ArrayList<Kiwi> kiwies = new ArrayList<>();
             Scanner fscan = new Scanner(new File(fname));
@@ -131,6 +131,24 @@ public class Zoo {
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+        }
+    }
+    static void example6() {
+        String dirName = "C:\\Users\\Teacher\\YandexDisk\\prog_2023\\java1\\13\\Zoo\\src\\files with birds";
+        // определяем объект для каталога
+        File dir = new File(dirName);
+        // если объект представляет каталог
+        if(dir.isDirectory())
+        {
+            // получаем все вложенные объекты в каталоге
+            for(File item : dir.listFiles()){
+                if(item.isDirectory()){
+                    System.out.println(item.getName() + "  \t folder");
+                }
+                else{
+                    System.out.println(item.getName() + "\t file");
+                }
+            }
         }
     }
 }
