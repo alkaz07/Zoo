@@ -2,6 +2,8 @@ package zoo.experimental.birds;
 
 public class Ostrich extends Bird {
     public double egg = 0.01;
+    static final double MIN_EGG = 0.001;
+    static final double MAX_EGG = 0.999;
 
     public Ostrich(String name, int age, double weight) {
         super("Страус", name, age, weight, false);
