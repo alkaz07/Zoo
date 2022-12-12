@@ -1,40 +1,57 @@
 package zoo.experimental.birds;
 
 public class Woodpecker extends Bird {
-    public double lucky = 0.05;
+    private double lucky = 0.05;
+    static final double MIN_LUCK = 0.001;
+    static final double MAX_LUCK = 0.999;
 
     public Woodpecker() {
-        System.out.println("Р·Р°РїСѓС‰РµРЅ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Woodpecker Р±РµР· РїР°СЂР°РјРµС‚СЂРѕРІ");
-        this.species = "Р”СЏС‚РµР»";
+        System.out.println("запущен конструктор Woodpecker без параметров");
+        this.species = "Дятел";
         this.flyable = true;
     }
     public Woodpecker(String name, int age, double weight) {
-        super("Р”СЏС‚РµР»", name, age, weight,true);
-        System.out.println("Р·Р°РїСѓС‰РµРЅ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Woodpecker СЃ РїР°СЂР°РјРµС‚СЂР°РјРё");
-/*        this.species = "Р”СЏС‚РµР»";
+        super("Дятел", name, age, weight,true);
+        System.out.println("запущен конструктор Woodpecker с параметрами");
+/*        this.species = "Дятел";
         this.flyable = true;
         this.name = name;
         this.age = age;
         this.weight = weight;*/
     }
 
+    public Woodpecker( String name, int age, double weight,  double lucky) {
+        super("Дятел", name, age, weight, true);
+        System.out.println("запущен конструктор Woodpecker с параметрами и удачей");
+        setLucky(lucky);
+    }
+
     public void knocks() {
         try {
             while (true) {
                 if (Math.random() < 1 - lucky) {
-                    System.out.println("Р”СЏС‚РµР» РїСЂРѕРґРѕР»Р¶Р°РµС‚ СЃС‚СѓС‡Р°С‚СЊ!");
+                    System.out.println("Дятел продолжает стучать!");
                 } else {
-                    System.out.println("Р”СЏС‚РµР» РЅР°С…РѕРґРёС‚ С‡РµСЂРІСЏРєР° Рё РїРµСЂРµР»РµС‚Р°РµС‚ РЅР° РґСЂСѓРіРѕРµ РґРµСЂРµРІРѕ");
+                    System.out.println("Дятел находит червяка и перелетает на другое дерево");
                     break;
                 }
                 Thread.sleep(444);
             }
         }
         catch (Exception e) {
-            System.out.println("Р”СЏС‚РµР» РґРѕСЃС‚СѓС‡Р°Р»СЃСЏ");
+            System.out.println("Дятел достучался");
         }
     }
-//    Р”Р»СЏ С‚РµСЃС‚Р°:
+
+    public void setLucky(double luck) {
+        if (luck < MIN_LUCK)
+            luck = MIN_LUCK;
+        if (luck >MAX_LUCK)
+            luck = MAX_LUCK;
+        this.lucky = luck;
+    }
+
+    //    Для теста:
 //    public static void main (String[] args) {
 //        Woodpecker woody = new Woodpecker("Woody",32,1.8);
 //        woody.knocks();

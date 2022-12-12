@@ -85,7 +85,9 @@ public class Zoo {
         System.out.println(bird1.name);
         System.out.println(bird2.name);
         System.out.println(bird3.name);
-
+        bird3.setLucky(-32);
+        Woodpecker bird4 = new Woodpecker("Голди",6, 0.8, 0.36);
+        bird4.knocks();
     }
 }
 
