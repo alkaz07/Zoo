@@ -7,4 +7,6 @@ public class Kiwi extends Bird{
     public void move() {
 
     }
+
+
 }
