@@ -9,12 +9,11 @@ public class Chiken extends Bird { //наследует клас родител�
     //int age;
 
     public Chiken(String color, String breed, String name, int age) {
+        super(breed+" курица", name,age,0, false);  //вызов конструктора базового класса
         System.out.println("запущен конструктор Chiken с параметрами");
         this.breed = breed;
         this.color = color;
-        this.age = age;
-        this.name = name;
-        this.flyable=false;
+
     }
 
     public void say() {
@@ -33,5 +32,9 @@ public class Chiken extends Bird { //наследует клас родител�
             System.out.println(this.name + "несушка" + GiveToEgg);
     }
 
+    @Override
+    public void move() {
+
+    }
 }
 

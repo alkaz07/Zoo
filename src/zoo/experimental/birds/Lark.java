@@ -1,6 +1,8 @@
 package zoo.experimental.birds;
 
-public class Lark extends Bird{
+import java.util.ArrayList;
+
+abstract public class Lark extends Bird{
   String  Sing;
 
 
@@ -27,4 +29,31 @@ public class Lark extends Bird{
      System.out.println("Передвигается прыжками ");
  }
 
+    @Override
+    public  void move() {
+
+            if(age<0)
+                this.age=0;
+            else
+                this.age = age;
+
+    }
+    public void setWeight(double weight) {
+        if(weight<0)
+            this.weight =0;
+        else
+            this.weight = weight;
+    }
+    public void Lark
+        {
+        ArrayList<String> Lark = new ArrayList<String>();
+        Lark.add("name");
+        Lark.add("age");
+        Lark.add("weight");
+        Lark.add("fly");
+        Lark.add("sing");
+
+
+        System.out.println(Lark.get(1));
+    }
 }

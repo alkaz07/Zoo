@@ -3,7 +3,7 @@ package zoo.experimental.mammals;
 public class Monkey extends Mammal {
     String species;
     String gender;
-    String name;
+
 
     public Monkey(String species) {
         this.species = species;
@@ -40,6 +40,14 @@ public class Monkey extends Mammal {
         if (species != null && name != null) return species + " " + name;
         else return "Обезъянка ";
     }
+
+    @Override
+    public void move() {
+        System.out.println("вжууух");
+        wave();
+    }
+
+
     // Код для теста
 //    Monkey kapucin = new Monkey("kapucin","male");
 //        kapucin.wave();
