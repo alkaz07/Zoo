@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55c351da-043d-4959-b561-e3836dcf272d" name="Changes" comment="+move">
+    <list default="true" id="55c351da-043d-4959-b561-e3836dcf272d" name="Changes" comment="+txt">
+      <change afterPath="$PROJECT_DIR$/src/lark-1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/zoo/experimental/birds/Ostrich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zoo/experimental/birds/Ostrich.java" afterDir="false" />
@@ -198,7 +199,8 @@
     <MESSAGE value="+ constructor for Bird" />
     <MESSAGE value="+ constructors for Woodpecker" />
     <MESSAGE value="+move" />
-    <option name="LAST_COMMIT_MESSAGE" value="+move" />
+    <MESSAGE value="+txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="+txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
